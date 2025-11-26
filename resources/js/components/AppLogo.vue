@@ -14,7 +14,7 @@ defineProps<Props>();
 </script>
 
 <template>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 50" :class="cn('size-5 fill-blue', className)" v-bind="$attrs">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 90 50" :class="cn('size-5 fill-white', className)" v-bind="$attrs">
         <path
             fill="inherit"
             fill-rule="evenodd"

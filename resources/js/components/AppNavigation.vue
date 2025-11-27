@@ -19,7 +19,7 @@ const navItems = [
                     v-for="item in navItems"
                     :key="item.name"
                     :href="item.href"
-                    class="flex min-w-[60px] flex-col items-center justify-center rounded-lg px-3 py-2 transition-colors hover:bg-gray-100 active:bg-gray-200"
+                    class="flex flex-col items-center justify-center rounded-lg px-3 py-2 transition-colors hover:bg-gray-100 active:bg-gray-200"
                     :class="[$page.url === item.href ? 'text-blue-600' : 'text-gray-600']"
                 >
                     <span class="mb-1 text-2xl">{{ item.icon }}</span>

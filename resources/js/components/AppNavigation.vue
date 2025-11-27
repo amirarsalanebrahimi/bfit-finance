@@ -19,7 +19,6 @@ const activeItemStyles = computed(
 
 // You can customize these navigation items as needed
 const navItems: NavItem[] = [
-    
     { title: 'داشبورد', href: DashboardController.url(), icon: Gauge },
     { title: 'تراکنش', href: TransactionController.index().url, icon: ChartLineIcon },
     { title: 'تگ', href: TagController.index().url, icon: TagsIcon }

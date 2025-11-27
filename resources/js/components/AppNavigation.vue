@@ -26,7 +26,8 @@ const navItems = [
                 </Link>
             </div>
             <div>
-                
+                <Link
+                    :href=""
             </div>
         </div>
     </nav>

@@ -7,7 +7,7 @@ import type { NavItem } from '@/types';
 
 // You can customize these navigation items as needed
 const navItems: NavItem[] = [
-    { name: 'Home', href: DashboardController.url(), icon: HouseIcon },
+    { title: 'Home', href: DashboardController.url(), icon: HouseIcon },
 ];
 </script>
 
@@ -17,13 +17,13 @@ const navItems: NavItem[] = [
             <div class="flex items-center justify-around py-3 rounded-4xl border-2 border-ring/20 backdrop-blur-xs">
                 <Link
                     v-for="item in navItems"
-                    :key="item.name"
+                    :key="item.title"
                     :href="item.href"
                     class="flex flex-col items-center justify-center rounded-lg px-3 py-2 transition-colors hover:bg-gray-100 active:bg-gray-200"
                     :class="[$page.url === item.href ? 'text-blue-600' : 'text-gray-600']"
                 >
                     <component v-if="item.icon" :is="item.icon" class="h-5 w-5" />
-                    <span class="text-xs font-medium">{{ item.name }}</span>
+                    <span class="text-xs font-medium">{{ item.title }}</span>
                 </Link>
             </div>
             <div>

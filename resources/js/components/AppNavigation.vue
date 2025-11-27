@@ -1,10 +1,11 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
 import { create } from '@/routes/transactions';
+import DashboardController from '@/actions/App/Http/Controllers/DashboardController';
 
 // You can customize these navigation items as needed
 const navItems = [
-    { name: 'Home', href: '/', icon: '🏠' },
+    { name: 'Home', href: DashboardController.url(), icon: '🏠' },
     { name: 'Dashboard', href: '/dashboard', icon: '📊' },
     { name: 'Profile', href: '/profile', icon: '👤' },
     { name: 'Settings', href: '/settings', icon: '⚙️' },

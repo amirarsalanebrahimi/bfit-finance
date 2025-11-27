@@ -5,7 +5,7 @@ import DashboardController from '@/actions/App/Http/Controllers/DashboardControl
 
 // You can customize these navigation items as needed
 const navItems = [
-    { name: 'Home', href: DashboardController.url(), icon: '🏠' },
+    { name: 'Home', href: DashboardController.url(), icon:  },
     { name: 'Dashboard', href: '/dashboard', icon: '📊' },
     { name: 'Profile', href: '/profile', icon: '👤' },
     { name: 'Settings', href: '/settings', icon: '⚙️' },

@@ -13,8 +13,8 @@ const navItems = [
 
 <template>
     <nav class="fixed right-0 bottom-0 left-0 z-50 px-4 py-8">
-        <div class="mx-auto flex justify-between gap-8 max-w-7xl  px-4 backdrop-blur-xs">
-            <div class="flex items-center justify-around py-3 rounded-4xl border-2 border-ring/20">
+        <div class="mx-auto flex justify-between gap-8 max-w-7xl px-4">
+            <div class="flex items-center justify-around py-3 rounded-4xl border-2 border-ring/20 backdrop-blur-xs">
                 <Link
                     v-for="item in navItems"
                     :key="item.name"

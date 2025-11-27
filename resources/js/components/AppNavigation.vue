@@ -12,7 +12,7 @@ const navItems = [
 
 <template>
     <nav class="fixed right-0 bottom-0 left-0 z-50 px-4 py-8">
-        <div class="mx-auto max-w-7xl rounded-lg border border-border px-4 backdrop-blur-xs">
+        <div class="mx-auto max-w-7xl rounded-lg border-2 border-border px-4 backdrop-blur-xs">
             <div class="flex items-center justify-around py-3">
                 <Link
                     v-for="item in navItems"

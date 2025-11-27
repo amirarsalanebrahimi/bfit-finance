@@ -6,7 +6,7 @@ import { HouseIcon } from 'lucide-vue-next';
 
 // You can customize these navigation items as needed
 const navItems = [
-    { name: 'Home', href: DashboardController.url(), icon:  },
+    { name: 'Home', href: DashboardController.url(), icon: HouseIcon },
     { name: 'Dashboard', href: '/dashboard', icon: '📊' },
     { name: 'Profile', href: '/profile', icon: '👤' },
     { name: 'Settings', href: '/settings', icon: '⚙️' },

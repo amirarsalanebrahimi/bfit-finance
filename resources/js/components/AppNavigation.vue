@@ -25,6 +25,9 @@ const navItems = [
                     <span class="text-xs font-medium">{{ item.name }}</span>
                 </Link>
             </div>
+            <div>
+                
+            </div>
         </div>
     </nav>
 </template>

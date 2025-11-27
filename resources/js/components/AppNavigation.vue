@@ -11,8 +11,8 @@ const navItems = [
 </script>
 
 <template>
-    <nav class="fixed right-0 bottom-0 left-0 z-50">
-        <div class="rounded-lg backdrop-blur-xs mx-auto max-w-7xl px-4">
+    <nav class="fixed right-0 bottom-0 left-0 z-50 px-4 py-8">
+        <div class="mx-auto max-w-7xl rounded-lg px-4 backdrop-blur-xs">
             <div class="flex items-center justify-around py-3">
                 <Link
                     v-for="item in navItems"

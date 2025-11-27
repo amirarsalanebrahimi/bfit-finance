@@ -1,20 +1,22 @@
 <script setup lang="ts">
-import { Link } from '@inertiajs/vue3';
+import { InertiaLinkProps, Link } from '@inertiajs/vue3';
 import { create } from '@/routes/transactions';
 import DashboardController from '@/actions/App/Http/Controllers/DashboardController';
 import { HouseIcon } from 'lucide-vue-next';
 import type { NavItem } from '@/types';
+import { computed } from 'vue';
+import { urlIsActive } from '@/lib/utils';
+
+const isCurrentRoute = computed(() => (url: NonNullable<InertiaLinkProps['href']>) => urlIsActive(url, page.url));
 
 // You can customize these navigation items as needed
-const navItems: NavItem[] = [
-    { title: 'Home', href: DashboardController.url(), icon: HouseIcon },
-];
+const navItems: NavItem[] = [{ title: 'Home', href: DashboardController.url(), icon: HouseIcon }];
 </script>
 
 <template>
     <nav class="fixed right-0 bottom-0 left-0 z-50 px-4 py-8 lg:hidden">
-        <div class="mx-auto flex justify-between gap-8 max-w-7xl px-4">
-            <div class="flex items-center justify-around py-3 rounded-4xl border-2 border-ring/20 backdrop-blur-xs">
+        <div class="mx-auto flex max-w-7xl justify-between gap-8 px-4">
+            <div class="flex items-center justify-around rounded-4xl border-2 border-ring/20 py-3 backdrop-blur-xs">
                 <Link
                     v-for="item in navItems"
                     :key="item.title"

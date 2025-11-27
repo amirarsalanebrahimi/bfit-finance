@@ -23,7 +23,7 @@ const navItems = [
                     class="flex flex-col items-center justify-center rounded-lg px-3 py-2 transition-colors hover:bg-gray-100 active:bg-gray-200"
                     :class="[$page.url === item.href ? 'text-blue-600' : 'text-gray-600']"
                 >
-                    <span class="mb-1 text-2xl">{{ item.icon }}</span>
+                    <component v-if="item.icon" :is="item.icon" class="h-5 w-5" />
                     <span class="text-xs font-medium">{{ item.name }}</span>
                 </Link>
             </div>

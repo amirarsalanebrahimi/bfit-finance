@@ -3,9 +3,10 @@ import { Link } from '@inertiajs/vue3';
 import { create } from '@/routes/transactions';
 import DashboardController from '@/actions/App/Http/Controllers/DashboardController';
 import { HouseIcon } from 'lucide-vue-next';
+import type { NavItem } from '@/types';
 
 // You can customize these navigation items as needed
-const navItems = [
+const navItems: NavItem[] = [
     { name: 'Home', href: DashboardController.url(), icon: HouseIcon },
 ];
 </script>

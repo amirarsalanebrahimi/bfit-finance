@@ -28,7 +28,7 @@ const navItems = [
             </div>
             <div>
                 <Link
-                    :href=""
+                    :href="create.url()"
             </div>
         </div>
     </nav>

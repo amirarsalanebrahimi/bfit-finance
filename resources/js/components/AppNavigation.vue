@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import { Link } from '@inertiajs/vue3';
+import { create } from '@/routes/transactions';
 
 // You can customize these navigation items as needed
 const navItems = [

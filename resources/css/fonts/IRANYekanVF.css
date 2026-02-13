@@ -10,7 +10,7 @@
 }
 
 @font-face {
-    font-family: 'iransansxv';
+    font-family: 'IRANSansXV';
     src: url('iransansxv.woff') format('woff-variations'),
         /* will be the standard and works in Safari now */
     url('iransansxv.woff') format('woff');

@@ -1,21 +1,10 @@
 @font-face {
-    font-family: IRANSansXV;
+    font-family: IRANYekanXVF;
     font-style: normal;
     font-display: fallback;
     font-weight: 100 1000;
     /*unicode-range: U + 0600-06FF, U + 0750-077F;*/
     src:
-        url('../../fonts/I') format('woff-variations'),
+        url('../../fonts/iranyekanx/IRANYekanXVF.woff') format('woff-variations'),
         url('../../fonts/iranyekanx/IRANYekanXVF.woff') format('woff');
-}
-
-@font-face {
-    font-family: 'IRANSansXV';
-    src: url('iransansxv.woff') format('woff-variations'),
-        /* will be the standard and works in Safari now */
-    url('iransansxv.woff') format('woff');
-    /* for the other supporting browsers */
-    font-weight: 100 900;
-    font-display: fallback;
-
 }
